@@ -1,0 +1,127 @@
+<html>
+<head>
+<title>Calculadora</title>
+<script type="text/javascript" src="js/dragnDrop.js"></script>  
+<style>
+		.calculadora_nova {
+			width: 140px;
+			border: 1px solid #CCC;
+			padding: 10px; 
+			position: absolute;
+		}
+		.calculadora_nova input {
+			padding: 3px;
+			border: 1px solid #8F8F8F;
+			width: 130px;	
+		}
+		.calculadora_nova div {
+			width: 22px;
+			border: none;
+			border-bottom: 1px solid #8F8F8F;
+			border-right: 1px solid #8F8F8F;
+			float: left;
+			margin: 2px;
+			padding: 3px;
+			text-align: center;
+			background: #EFEFEF;
+			cursor: pointer;
+			font-size: 11px;
+		}
+		.calculadora_nova .result {	
+			background: #8F8F8F !important;
+			color: #FFF;
+		}
+		.calculadora_nova .operator {	
+			font-weight: bold;
+			background: #EFEFD1 !important;
+		}
+		.calculadora_nova .clear {	
+			background: #DFC3C3 !important;
+		}
+		
+		.produtos {
+			width: 200px;
+			height: 200px;
+			float: left;
+			border: 1px solid #CCC;
+		}
+	</style>
+	
+	
+</head>
+
+<body>
+
+<h1>Loja de Compras v0.5 </h1>
+<div style="border: 1px solid #CCC; height: auto; padding: 20px;" id="lata_de_lixo">
+Sacola de Compras
+</div>
+<br clear="all" />
+<hr size="1" noshade="noshade" />
+<h2>Produtos</h2>
+<div class="produtos" id="pedra"><img src="loja1.jpg" width="200" height="200"> </div>
+<div class="produtos" id="laco"><img src="loja2.jpg" width="200" height="200"> </div>
+<div class="produtos" id="chop"><img src="loja3.jpg" width="200" height="200"> </div>
+<br clear="all" />
+<hr size="1" noshade="noshade" />
+
+
+<p style="color: red">
+	Para colocar um produto no carrinho de compras, arraste e solte-o no carrinho
+</p>
+
+
+<p>
+X -> <input type="text" size="3" name="x" id="x" /> Y -> <input type="text" size="3" name="y" id="y" />
+</p>
+
+
+<script type="text/javascript">
+
+
+
+dragnDrop = new dragnDrop()
+dragnDrop.set("pedra","lata_de_lixo", function sim(){
+			var objectLoja = document.getElementById("pedra")
+			var objectLata = document.getElementById("lata_de_lixo")
+			alert(objectLata.childNodes.length)
+
+			objectLoja.style.Width =" 20px !important"
+			objectLoja.style.Height =" 20px !important"
+			objectLoja.style.position = "static"
+			
+			objectLata.appendChild(objectLoja)
+			
+	}
+)
+
+dragnDrop.set("laco","lata_de_lixo", function sim(){
+			var objectLoja = document.getElementById("laco")
+			var objectLata = document.getElementById("lata_de_lixo")
+			alert(objectLata.childNodes.length)
+
+			objectLoja.style.Width =" 20px !important"
+			objectLoja.style.Height =" 20px !important"
+			objectLoja.style.position = "static"
+			
+			objectLata.appendChild(objectLoja)
+		
+	}
+)
+
+dragnDrop.set("chop","lata_de_lixo", function sim(){
+			var objectLoja = document.getElementById("chop")
+			var objectLata = document.getElementById("lata_de_lixo")
+			alert(objectLata.childNodes.length)
+
+			objectLoja.style.Width =" 20px !important"
+			objectLoja.style.Height =" 20px !important"
+			objectLoja.style.position = "static"
+			
+			objectLata.appendChild(objectLoja)
+			
+	}
+)
+</script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Idle Lib - Biblioteca de Códigos JavaScript Idle Systems</title>
+<style type="text/css" media="screen">
+		<!-- @import url("css/stylePage.css"); -->
+	
+	#tabela {
+		border: 1px solid #F2FF06;
+		width: 600px;
+	}
+	#tabela tr th { background-color: #F2FF06; } 
+	#tabela tr td {
+			padding: 5px;
+			border-bottom: 1px solid #F2FF06;
+			font: 18px Arial, sans-serif;
+			color: #D5CF0B;
+	}
+</style>
+<script type="text/javascript" src="js/fadeColor2.js"></script>
+</head>
+<body>
+
+
+<table border="0" id="tabela" cellspacing="0" cellpading="0">
+	<tr id="tr111">
+		<th>Nome</th>
+		<th>Idade</th>
+	</tr>
+	<tr id="tr2222222">
+		<td>Marcelo Linhares</td>
+		<td>22</td>
+	</tr>
+	<tr id="tr333333">
+		<td>Antonio márcio</td>
+		<td>20</td>
+	</tr>
+	<tr id="tr444444">
+		<td>Cris boson</td>
+		<td>32</td>
+	</tr>
+	<tr id="tr5555555">
+		<td>Edson Pelé</td>
+		<td>28</td>
+	</tr>
+	<tr id="tr6666666">
+		<td>Romário</td>
+		<td>42</td>
+	</tr>	
+</table>
+
+<script type="text/javascript">
+
+	var lines = document.getElementById('tabela').getElementsByTagName('tr')
+	for(i=0;i<lines.length;i++){
+		lines[i].onmouseover = function() {
+			idle_Effects.fadeColor(this.id,'255|255|255','0|255|0',0.1)
+		}
+		lines[i].onmouseout = function() {
+			//alert('out')
+			idle_Effects.fadeColorOut(this.id,'255|255|255',0.1)
+		}
+	}  
+
+</script>
+</body>
+</html>

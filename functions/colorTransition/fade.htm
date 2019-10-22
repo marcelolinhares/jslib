@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Idle Lib - Biblioteca de Códigos JavaScript Idle Systems</title>
+<style type="text/css" media="screen">
+		<!-- @import url("css/stylePage.css"); -->
+</style>
+<script>
+
+idle_Effects = {
+	/****************************
+		Atributos públicos
+	*****************************/
+	idObjectEffect: Object(),
+	velocity:'100',
+	contEffect: 0,
+	__GLOBAL__: [],
+
+	/****************************
+		Metodos e Funcoes
+	*****************************/
+	
+	/******** EFEITO FADE COLOR *************/
+	fadeColor:function(objectFade,startColor,endColor,velocity){
+		
+		this.velocity = velocity
+		_objectFade = document.getElementById(objectFade)
+
+		this.objectFade = objectFade
+		//if(this.contEffect>0) { alert('entrou'); clearTimeout(__GLOBAL__) }
+		
+		
+		startColor = startColor.split("|")
+		endColor = endColor.split("|")
+	
+		/* ---- Recebendo o RGB da cor inicial ---- */
+		 startColorRed   = startColor[0];
+		 startColorGreen = startColor[1]
+		 startColorBlue  = startColor[2]
+		
+		/* ---- Recebendo o RGB da cor final ---- */
+		 endColorRed   = endColor[0]
+		 endColorGreen = endColor[1]
+		 endColorBlue  = endColor[2]
+		
+		/* ---- Condição de parada da recursão ---- */
+		if(startColorRed == endColorRed && startColorGreen == endColorGreen && startColorBlue == endColorBlue){
+			return 0
+		}
+		
+		/* ---- Consistencia de cores -----  */
+		
+		/* --- Cor vermelha ---- */
+		if(eval(startColorRed) > eval(endColorRed)){
+			startColorRed--
+		}
+		else if(eval(startColorRed) < eval(endColorRed)) {
+			startColorRed++
+		}
+		/* ---- Cor verde ----- */
+		if(eval(startColorGreen) > eval(endColorGreen)){
+			startColorGreen--
+		}
+		else if(eval(startColorGreen) < eval(endColorGreen)) {
+			startColorGreen++
+		}
+	
+		/* ----- Cor azul ----- */
+		if(eval(startColorBlue) > eval(endColorBlue)){
+			startColorBlue--
+		}
+		else if(eval(startColorBlue) < eval(endColorBlue)) {
+			startColorBlue++
+		}
+		color = "rgb("+startColorRed+","+startColorGreen+","+startColorBlue+")"
+		_objectFade.style.backgroundColor = color 
+		this.objectFade.style.backgroundColor = color
+		
+		
+		/* Criando as cores */
+		stringStartColor =  startColorRed + "|" + startColorGreen + "|" + startColorBlue
+		stringEndColor = endColorRed + "|" + endColorGreen + "|" + endColorBlue 
+		
+		//alert(_objectFade) 
+		/* chamando a recurs?o */ 
+		
+		this.contEffect++
+		
+		setTimeout("idle_Effects.fadeColor(_objectFade,stringStartColor,stringEndColor,this.velocity)",this.velocity)
+		
+		
+		//alert(this.fadeColor)
+	}
+}
+</script>
+
+</head>
+<body>
+
+
+
+<hr size="1" noshade="noshade" />
+<div style="width: 500px; height: 150px; background: rgb(255,0,255); border: 4px solid pink;" id="menu"> FadeColor1222</div>
+<a href="#" onclick="idle_Effects.fadeColor(document.getElementById('menu'),'155|155|155','0|0|10',1350)">Fade Color</a> 
+<hr size="1" noshade="noshade" />
+<div style="width: 500px; height: 150px; background: rgb(0,0,255); border: 4px solid pink;" id="menu2"> FadeColor1222</div>
+<a href="#" onclick="idle_Effects.fadeColor(document.getElementById('menu2'),'0|0|255','255|255|50',1350)">Fade Color</a> 
+
+<hr size="1" noshade="noshade" />
+
+</body>
+</html>

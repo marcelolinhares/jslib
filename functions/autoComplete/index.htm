@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>JavaScript Teste - AutoComplete</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<style type="text/css" media="screen">
+
+ul.auto {
+		border: 1px solid #CCC;	
+		/* height: 150px; */
+		overflow: hidden;
+		position: absolute;
+		margin-left: 0;
+		margin-top: 0;
+		padding: 0;
+		font: 11px sans-serif;
+	}
+	ul.auto li {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;	
+		cursor: pointer;
+		padding: 2px;
+		/* width: 97%; */
+		border: 1px dashed #CCC;
+		background: #FFF;
+	}
+	ul.auto li.hover {
+		background: #CCC;
+	}
+</style>
+
+<script type="text/javascript" src="js/event.js"></script>  
+<script type="text/javascript" src="js/autoComplete.js"></script>  
+</head>
+<body>
+<div id="pagina">
+<form action="busca.jsp" id="formPage" method="post" />
+<h1>AutoComplete via Ajax</h1>
+
+<fieldset>
+	<legend>Teste1</legend>
+<p>
+<label for="login">Login</label>
+<input type="text" name="nome" size="40" id="login" /> <input type="submit" name="enviar" />
+</p>
+<p>
+<label for="login">Login</label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="nome" size="40" id="login2" /> <input type="submit" name="enviar" />
+</p>
+<p>
+<label for="login">Login</label> <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="nome" size="40" id="login3" /> <input type="submit" name="enviar" />
+</p>
+<p>
+<label for="login">Login</label> <br />
+<input type="text" name="nome" size="40" id="login4" /> <input type="submit" name="enviar" />
+</p>
+
+</fieldset>
+</form>
+</div>
+
+</body>
+<script type="text/javascript">
+
+requestAutoComplete('formPage','login','teste.php?name=','auto',false)
+requestAutoComplete('formPage','login2','teste.php?name=','auto',true)
+requestAutoComplete('formPage','login3','teste.php?name=','auto',false)
+requestAutoComplete('formPage','login4','teste.php?name=','auto',true)
+
+</script>
+</html>

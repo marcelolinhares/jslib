@@ -1,0 +1,379 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>JSLib - Biblioteca de Códigos JavaScript - Marcelo Linhares</title>
+<style type="text/css" media="screen">
+		<!-- @import url("css/stylePage.css"); -->
+</style>
+<script type="text/javascript" src="js/functionsDHTML.js"></script>
+</head>
+<body>
+<h1 id="tituloGeral">JS Libs - Biblioteca de Javascript</h1>
+<div id="paginaToda">
+			 
+	<ol id="menuCode">
+		<li id="l1"><a href="#p1">Popular Combo Via Ajax</a></li>
+		<li id="l2"><a href="#p2">Alterar fundo da Linha da Tabela</a></li>
+		<li id="l3"><a href="#p3">Classe para Ordenar Tabela númerica via método da bolha</a></li>
+		<li id="l4"><a href="#p4">Desabilitar Form</a></li>	
+		<li id="l5"><a href="#p5">Função Auto Complete via Ajax</a></li>
+		<li id="l6"><a href="#p6">Navegação em Árvore Multinível</a></li>
+		<li id="l7"><a href="#p7">DragnDrop</a></li>
+		<li id="l8"><a href="#p8">Controller</a></li>	
+		<li id="l9"><a href="#p9">Função para estilização de formulário com validação automática </a></li>
+		<li id="l10"><a href="#p10">Máscara para entrada de caracteres inválidos em formulários</a></li>
+		<li id="l11"><a href="#p11">Transição de cores</a></li>
+		<li id="l12"><a href="#p12">Validação automática de Forms</a></li>						
+	</ol>
+<div class="listCodigo" id="pl1"><a name="p1" />		
+<h2>Popular Combo Via Ajax</h2>
+<p>
+	Função para popular um campo select via <acronym title="Assyncronus JavaScript XML">Ajax</acronym>. Muito utilizado para os seguintes pares de entidades (Estado / Cidade), (Categoria, Plano), (Diretório, SubDiretório)... 
+</p>
+<p>
+	<h4>Funções Inclusas:</h4>
+	<ol>
+		<li><strong>getObjectXML()</strong> - Retorna um objeto XMLHttpRequest CrossBrowser</li>
+		<li><strong>clearCombo(idCombo) </strong> - Limpa todos os valores do comboBox, o ID do combo é passado como parâmetro</li>	
+		<li><strong>populateSelect(idObject,idObjectPopulate,url,parametro)</strong> - Função principal que popula o comboBox</li>	
+
+	</ol>
+</p>
+<h4>Método de Chamada</h4>
+	<code>
+		 populateSelect(idObject,idObjectPopulate,url,parametro)
+	</code>
+<p>
+	<strong>Onde..</strong>
+</p>
+	
+<span class="atributo"><span>idObject:</span> 		Id do comboBox principal</span>
+<span class="atributo"><span>idObjectPopulate:</span> 		Id do comboBox que será populado</span>
+<span class="atributo"><span>url:</span> 		Url da Action</span>
+<span class="atributo"><span>parametro:</span> Nome do Parâmetro que será passado</span>
+
+<a href="functions/ajaxPopulationSelect/index.htm" class="linkCodigo">Visualizar Código e exemplo</a>
+
+</div> <!-- fim ListCódigo -->
+
+
+
+
+
+
+<div class="listCodigo" id="pl2"><a name="p2" />		
+<h2>Alterar fundo da Linha da Tabela</h2>
+<p>
+	Função para alterar o backGround da linha da tabela quando o usuário passar o mouse sobre a linha.
+</p>
+<p>
+As linhas que o desenvolvedor desejar que tenham efeito deverão estar estilizadas com o seletor de classe "hover"
+<p>
+	<h4>Funções Inclusas:</h4>
+	<ol>
+		<li><strong>lineHover(idTable)</strong> - Função Principal, passa o ID da tabela que deseja atribuir o efeito como parâmetro</li>
+	</ol>
+</p>
+<h4>Método de Chamada</h4>
+	<code>
+		 lineHover(idTable)
+	</code>
+<p>
+	<strong>Onde..</strong>
+</p>
+	
+<span class="atributo"><span>idTable:</span> 		Id da Tabela que deseja atribuir o efeito</span>
+
+<a href="functions/hoverTR/index.htm" class="linkCodigo">Visualizar Código e exemplo</a>
+
+</div> <!-- fim ListCódigo -->
+
+
+
+
+
+<div class="listCodigo" id="pl3"><a name="p3" />		
+<h2>Ordenar Tabela</h2>
+<p>
+	Classe para Ordenar Tabela númerica via método da bolha
+</p>
+
+	<h4>Funções Inclusas:</h4>
+	<ol>
+		<li><strong>changeLine(line1,line2)</strong> - Efetua a troca das duas linhas</li>
+	<li><strong>orderTable(idTable,indexColum)</strong> - Efetua a ordenação da coluna <i>indexColum</i> tabela <i>idTable</i> passada como parâmetro </li>
+	</ol>
+</p>
+<h4>Método de Chamada</h4>
+	<code>
+		onclick="orderTable('idTable','indexColum')
+	</code>
+<p>
+	<strong>Onde..</strong>
+</p>
+	
+<span class="atributo"><span>idTable:</span> 		Id da Tabela </span>
+<span class="atributo"><span>indexColum:</span> 		Indíce da Coluna que será ordenada </span>
+<a href="functions/orderTable/index.htm" class="linkCodigo">Visualizar Código e exemplo</a>
+
+</div> <!-- fim ListCódigo -->
+
+<div class="listCodigo" id="pl4"><a name="p4" />		
+<h2>Desabilitar Form</h2>
+<p>
+	Função para disabilitar conjunto de inputs
+</p>
+
+	<h4>Funções Inclusas:</h4>
+	<ol>
+		<li><strong>disableInput(idObjAction,idAllInputs)</strong> - Função Principal, passa o ID do conjunto de inputs que deseja desabilitar e o ID do botão que será atribuída a ação de click</li>
+	</ol>
+</p>
+<h4>Método de Chamada</h4>
+	<code>
+		disableInput(idObjAction,idAllInputs)
+	</code>
+<p>
+	<strong>Onde..</strong>
+</p>
+	
+<span class="atributo"><span>idAllInputs:</span> 		Id do conjunto de inputs que deseja desabilitar</span>
+<span class="atributo"><span>idObjAction:</span> 		Id do botão que realizará a ação</span>
+<a href="functions/disableInput/index.htm" class="linkCodigo">Visualizar Código e exemplo</a>
+
+</div> <!-- fim ListCódigo -->
+
+<div class="listCodigo" id="pl5"><a name="p5">		
+<h2>Função Auto-Complete ViaAjax</h2>
+<p>
+	Classe para autoCompletar um campo de texto via Ajax, semelhante ao <a href="http://www.google.com/webhp?complete=1&hl=en">GoogleSuggest</a>, A action que detalha a lógica da resposta é passada como parâmetro
+</p>
+<p class="boxAlert">
+	<strong>Atenção:</strong>  A cada tecla de entrada é realizada um post na action, então tome cuidado ao utilizar esta classe, seu servidor agradece ;-)
+</p>
+
+
+	<h4>Funções Inclusas:</h4>
+	<ol>
+		<li><strong>getObjectXML()</strong> - Retorna um objeto XMLHttpRequest CrossBrowser</li>
+		<li><strong>requestAutoComplete(idForm,idObj,urlAction,styleComplete,clickPost)</strong> - Função principal para ser colocado na View</li>
+</ol>
+</p>
+<h4>Método de Chamada</h4>
+	<code>
+		requestAutoComplete(idForm,idObj,urlAction,styleComplete,clickPost)
+	</code>
+<p>
+	<strong>Onde..</strong>
+</p>
+	
+<span class="atributo"><span>idForm:</span> ID do Formulário onde o INPUT está inserido</span>
+<span class="atributo"><span>idObj:</span> ID do INPUT que terá o autoComplete</span>
+<span class="atributo"><span>urlAction:</span> 		Action responsável por controlar o retorno dos dados que serão exibidos no autoComplete</span>
+<span class="atributo"><span>styleComplete:</span> 	Classe de Estilo que será atribuído ao autoComplete</span>
+<span class="atributo"><span>clickPost:</span> 		Variável booleana que determina se ao clicar no elemento, o formulário já é automaticamente submetido </span>
+
+<a href="functions/autoComplete/index.htm" class="linkCodigo">Visualizar Código e exemplo</a>
+
+</div> <!-- fim ListCódigo -->
+
+
+<div class="listCodigo" id="pl6"><a name="p6">		
+<h2>Navegação em Árvore Multinível</h2>
+<p>
+	Script para Navegação em árvore multinível
+</p>
+	
+
+<a href="functions/multiTree/index.htm" class="linkCodigo">Visualizar Código e exemplo</a>
+
+</div> <!-- fim ListCódigo -->
+
+<div class="listCodigo" id="pl7"><a name="p7">		
+<h2>DragnDrop</h2>
+<p>
+	Classe para permitir arrastar e soltar objetos, com um destino pré-definido
+</p>
+<p class="boxAlert">
+	<strong>Atenção:</strong> Esta classe precisa de alguns pequenos ajustes
+</p>	
+<h4>Funções Inclusas:</h4>
+	<ol>
+		<li><strong>dragnDrop()</strong> - Nome do objeto</li>
+		<li><strong>setDrag(idOrigem,idDestino,funcao)</strong> - Método que atribui o dragnDrop no objeto</li>
+	</ol>
+
+<h4>Método de Chamada</h4>
+	<code>
+		var drag = new dragnDrop() <br />
+		drag.setDrag(idOrigem,idDestino,function)
+	</code>
+<p>
+	<strong>Onde..</strong>
+</p>
+	
+<span class="atributo"><span>idOrigem:</span> ID do objeto de origem, que poderá ser arrastado </span>
+<span class="atributo"><span>idDestino:</span> ID da área de destino</span>
+<span class="atributo"><span>function:</span> 		Função que será executada quando o objeto de origem estiver solto no objeto de origem</span>
+
+
+<a href="functions/dragnDrop/index.htm" class="linkCodigo">Visualizar Código e exemplo</a>
+
+</div> <!-- fim ListCódigo -->
+
+
+
+<div class="listCodigo" id="pl8"><a name="p8">		
+<h2>Controller</h2>
+<p>
+	Componente para controlar alguma coisa (use a imaginação ;-) ), baseada na classe de DragnDrop, porém é necessário realizar alguns pequenos ajustes
+</p>
+	
+
+<a href="functions/controller/index.htm" class="linkCodigo">Visualizar Código e exemplo</a>
+<p>
+	Outro exemplo de utilização do componente controller <a href="functions/controller_elements/index.htm" class="linkCodigo">Código e exemplo</a>
+</p>
+</div> <!-- fim ListCódigo -->
+
+
+<div class="listCodigo" id="pl9"><a name="p9">		
+<h2>Classe para estilização de formulário com validação automática</h2>
+<p>
+	Esta classe, como pode ser vista no exemplo abaixo, cria um "tooltip" ao lado do campo text, além de criar um validação simples em javascript
+</p>
+
+<h4>Forma de utilização</h4>
+<p>Basta inserir um link para este javascript dentro da tag head: </p>
+
+<code>
+		&lt;script type=&quot;text/javascript&quot; src=&quot;js/functionsForm.js&quot;&gt;&lt;/script&gt;
+</code>
+<div>
+	<p>	
+		Campos de preenchimento obrigatório (parâmetro true depois do pipe duplo - || ) : 
+	</p>
+	<code>
+		&lt;input type=&quot;text&quot; name=&quot;email&quot; id=&quot;email&quot; title=&quot;Entre com o seu e-mail ||true&quot;&gt;</body>
+
+ 	</code>
+
+ 	<p>
+		 Campos sem preenchimento obrigatório (parâmetro false depois do pipe duplo - || ) 
+	</p>
+
+	<code>
+		&lt;input type=&quot;text&quot; name=&quot;email&quot; id=&quot;email&quot; title=&quot;Entre com o seu e-mail&quot;&gt;
+ 	</code>
+
+	<ol>
+		<li>O primeiro texto do atributo "title" antes do "||" corresponde ao texto que será exibido no tooltip</li>
+ 		<li>O segundo texto indica se o campo será obrigatório ou não</li>
+	</ol>
+</div>
+	
+<a href="functions/form/index.htm" class="linkCodigo">Visualizar Código e exemplo</a> <br /
+
+</div> <!-- fim ListCódigo -->
+
+
+
+
+<!-- Máscara de caracteres inválidos -->
+<div class="listCodigo" id="pl10"><a name="p10">		
+<h2>Máscara para entrada de caracteres inválidos em formulários</h2>
+<p>
+	Máscara para entrada de caracteres inválidos em formulários
+</p>
+
+<h4>Construtor</h4>
+<ol>
+	<li><strong>maskCaracter(classToolTip)</strong> - Construtor da classe, passa como parâmetro a classe que estilizará o box </li>
+</ol>	
+<h4>Métodos da Classe:</h4>
+	<ol>
+		<li><strong>validCaracter(id_input1,id_input2,id_input3,id_input...)</strong> - Validação de caracteres inválidos, os argumentos são os ID's dos inputs que receberão a validação</li>
+		<li><strong>validNumber(id_input1,id_input2,id_input3,id_input...)</strong> - Validação de números, os argumentos são os ID's dos inputs que receberão a validação</li>
+		<li><strong>validMail(id_input1,id_input2,id_input3,id_input...)</strong> - Validação de e-mails, os argumentos são os ID's dos inputs que receberão a validação</li>
+	</ol>
+
+<h4>Método de Chamada</h4>
+	<code>
+		var valid = new maskCaracter(classTooltip) <br />
+		valid.validCaracter(IDInput)
+	</code>
+<p>
+	<strong>Onde..</strong>
+</p>
+	
+<span class="atributo"><span>classTooltip:</span> seletor de classe CSS que irá estilizar o box </span>
+<span class="atributo"><span>IDInput:</span> ID do input que terá a mascára atribuída</span>
+
+
+<a href="functions/maskCaracter/index.htm" class="linkCodigo">Visualizar Código e exemplo</a> <br /
+
+</div> <!-- Máscara de caracteres inválidos -->
+
+
+
+<!-- Máscara de caracteres inválidos -->
+<div class="listCodigo" id="pl11"><a name="p10">		
+<h2>Transição de cores</h2>
+<p>
+	Efetua transição de cores no background de um objeto. Para que raios isto serve? não sei ;-)
+</p>
+
+<h4>Construtor</h4>
+<ol>
+	<li><strong>fadeColor(instanceObject,startColor,endColor,velocity)</strong> - Construtor da classe, passa como parâmetro  </li>
+</ol>	
+<h4>Onde:</h4>
+
+		<span class="atributo"><span>instanceObject:</span> - Instância do objeto (ID) do elemento que sofrerá a transição de cores</span>
+		<span class="atributo"><span>startColor:</span> - Cor inicial do objeto (em RGB, exemplo: 255|255|255)</span>
+		<span class="atributo"><span>endColor:</span> - Cor final do objeto (em RGB, exemplo: 0|0|0)</span>
+		<span class="atributo"><span>velocity:</span> - velocidade em que acontecerá a transição entre as cores</span>
+
+
+
+<a href="functions/colorTransition/index.htm" class="linkCodigo">Visualizar Código e exemplo</a> <br /
+
+</div> <!-- transição entre cores -->
+
+
+
+
+<!-- Máscara de caracteres inválidos -->
+<div class="listCodigo" id="pl12"><a name="p11">		
+<h2>Validação automática de forms</h2>
+<p>
+	Efetua transição validação automática de formulários de acordo com o atributo "class" colocado
+</p>
+
+<h4>Construtor</h4>
+<ol>
+	<li><strong>IdleValidateForm()</li>
+</ol>	
+<h4>Como utilizar</h4>
+
+		<span class="atributo">class="validate_text_not_null" | Campo não pode ficar vazio </span>
+		<span class="atributo">class="validate_text_email" | Apenas e-mails </span>
+		<span class="atributo">class="validate_text_only_number" | Campo aceita apenas números</span>
+		<span class="atributo">class="validate_text_only_text" | Campo aceita apenas texto</span>
+		<span class="atributo">class="validate_text_date" | Campo aceita apenas data</span>
+		<span class="atributo">class="validate_text_cpf" | Validação de CPF</span>
+			<span class="atributo">class="validate_check_only_3" | Form aceita apenas 3 checkbox marcado</span>
+<a href="functions/colorTransition/index.htm" class="linkCodigo">Visualizar Código e exemplo</a> <br /
+
+</div> <!-- transição entre cores -->
+
+
+<div id="rodape">
+
+</div>
+</div> <!-- fim da página toda -->
+
+</body>
+</html>

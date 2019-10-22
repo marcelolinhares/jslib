@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Testando formul&aacute;rio</title>
+<style type="text/css" media="screen">
+		<!-- @import url("css/stylePage.css"); -->
+</style>
+<script type="text/javascript" src="js/idleValidateFormMessages.js"></script>
+<script type="text/javascript" src="js/idleValidateForm.js"></script>
+</head>
+<body>
+
+<form name="formulario" method="post" action="page_inexiste.jsp" id="formCadastro" title="Preencha o formul�rio corretamente, Os campos marcados s�o obrigat�rios">	
+   <div id="orientacao">
+   		Por favor, Preencha o formul&aacute;rio Corretamente...
+		<br />
+		Exemplo de utiliza&ccedil;&atilde;o da camada de comportamento para valida&ccedil;&atilde;o de formul&aacute;rio via javascript. Utiliza a abordagem de javascript n&atilde;o obtrusivo (Caso o usu&aacute;rio desabilite o javascript o formul&aacute;rio continua funcionando)
+   </div>	
+	<p>
+		<label for="nome">Nome </label>
+		<input type="text" name="form_nome" id="nome" title="Entre com o seu nome Completo" class="validate_text_not_null" maxlength="30" /> (validate_text_not_null) 
+	</p>
+	<p>
+		<label for="email">E-mail </label>
+		<input type="text" name="form_email" id="email" title="Entre com o seu e-mail" class="validate_text_email" maxlength="30" /> (validate_text_email)
+	</p>		
+	<p>
+		<label for="telefone">Telefone </label>
+		<input type"text" name="form_telefone" id="telefone" title="Entre com o seu telefone" class="validate_text_only_number" maxlength="10" /> (validate_text_only_number)
+	</p>
+	<p>
+		<label for="telefone">Endereco </label>
+		<input type"text" name="form_telefone" id="telefone" title="Entre com o seu endereco completo" class="validate_text_only_text" size="60"  maxlength="40" /> (validate_text_only_text)
+	</p>
+	<p>
+		<label for="aniversario">Aniversario</label>
+		<input type"text" name="form_aniversario" id="aniversario" title="Entre com o seu aniversário" class="validate_text_date" size="12" /> (validate_text_date | dd/mm/aaaa)
+	</p>
+	<p>
+		<label for="aniversario">CPF</label>
+		<input type"text" name="form_cpf" id="cpf" title="Entre com o CPF valido" class="validate_text_cpf" size="12" maxlength="11" /> (validate_text_cpf )
+	</p>
+
+	<fieldset class="validate_check_only_3">
+		<legend>Escolha as cores de sua prefer&eacute;ncia (Apenas 3 cores = validate_check_only_3)</legend>
+		<label for="cor_verde"> <input type="checkbox" name="preferencias_cor" id="cor_verde" /> Vede</label> 
+		<label for="cor_vermelho"> <input type="checkbox" name="preferencias_cor" id="cor_vermelho" />Vermelho</label> 
+		<label for="cor_amarelo"> <input type="checkbox" name="preferencias_cor" id="cor_amarelo" />Amarelo  </label>
+		<label for="cor_azul"> <input type="checkbox" name="preferencias_cor" id="cor_azul" />Azul </label>
+		<label for="cor_rosa"> <input type="checkbox" name="preferencias_cor" id="cor_rosa" />Rosa  </label>
+	</fieldset>
+
+	<fieldset class="validate_check_min_3">
+		<legend>Escolha os esportes de sua preferência (No mínimo 3 cores = validate_check_min_3)</legend>
+		<label for="esp_futebol"> <input type="checkbox" name="preferencias_esportes" id="esp_futebol" /> Futebol</label> 
+		<label for="esp_basquete"> <input type="checkbox" name="preferencias_esportes" id="esp_basquete" /> Basquete</label> 
+		<label for="esp_beisebol"> <input type="checkbox" name="preferencias_esportes" id="esp_beisebol" /> Beisebol </label>
+		<label for="esp_volei"> <input type="checkbox" name="preferencias_esportes" id="esp_volei" /> Volei </label>
+		<label for="cor_dama"> <input type="checkbox" name="preferencias_esportes" id="cor_dama"> Dama  </label>
+		<label for="cor_xadrez"> <input type="checkbox" name="preferencias_esportes" id="cor_xadrez"> Xadres  </label>
+	</fieldset>
+	<p>
+		<label for="telefone">Cidade</label>
+		<select name="cidade" class="validate_select" title="Escolha a cidade">
+			<option value="---">ESCOLHA</option>
+			<option value="Belo Horizonte">Belo Horizonte</option>
+			<option value="Belo Horizonte">Betim</option>
+			<option value="Belo Horizonte">Contagem</option>
+			<option value="Belo Horizonte">São João Delrey</option>
+			<option value="Belo Horizonte">Itabira</option>
+			<option value="Belo Horizonte">Ipatinga</option>
+		</select>
+	</p>
+	<p>
+		<input type="submit" value="enviar" id="btSubmit" class="mao" />
+	</p>
+</form>
+<script type="text/javascript">
+	IdleValidateForm()
+</script>
+</body>
+</html>

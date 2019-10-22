@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Testando formul�rio</title>
+<style type="text/css" media="screen">
+		<!-- @import url("css/stylePage.css"); -->
+</style>
+<script type="text/javascript" src="js/functionsForm.js"></script>
+</head>
+<body>
+
+<form name="formulario" method=�post" actio="page_inexiste.jsp" id="formCadastro" title="Preencha o formul�rio corretamente, Os campos marcados s�o obrigat�rios">	
+   <div id="orientacao">
+   		Por favor, Preencha o Formul�rio Corretamente...
+		<br />
+		Exemplo de utilização do script para validação de formulário dinamicamente via javascript e inserção de um tooltip nos campos de texto
+   </div>	
+	<p>
+		<label for="nome"> Nome</label>
+		<input type="text" name="nome" id="nome" title="Entre com o seu nome Completo ||true">
+	</p>
+	<p>
+		<label for="email">E-mail</label>
+		<input type="text" name="email" id="email" title="Entre com o seu e-mail ||false">
+	</p>		
+	<p>
+		<label for="telefone">Telefone</label>
+		<input type"text" name="telefone" id="telefone" title="Entre com o seu telefone ||true">
+	</p>	
+	
+	<input type="submit" value="enviar" id="btSubmit" class="mao" />
+</form>
+</body>
+</html>

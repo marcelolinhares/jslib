@@ -1,0 +1,131 @@
+/* ------------------------------------
+*
+* 	@style  = "Estilizar Todas as páginas do sistema de PABX14"
+* 	@author = "Idle Systems - http://www.idle.com.br
+*
+*-----------------------------------*/
+body {
+	font: 13px Trebuchet MS, sans-serif;
+	color: #4D4D4D;
+	margin: 0;text-align: left;
+	margin: 50px;
+}
+#formCadastro {
+	background: url(../img/topo_form.jpg) no-repeat;
+	height: 114px;
+	padding-top: 114px;
+	padding-bottom: 15px;
+	/* border-bottom: 4px solid #F7F3A9; */
+	
+}
+body a {
+	color: #4D4D4D;
+}
+
+input, select {
+	border: 1px solid #787878;
+	border-top: 1px solid #D3D3D3;
+	border-left: 1px solid #D3D3D3;
+	padding: 2px;
+	font: 11px Trebuchet MS, sans-serif;
+	background: url(../img/background_input.gif) repeat-x;
+}
+label {
+	font-weight: bold;
+	width: 70px;
+	display: block; 
+	float: left;
+}
+fieldset label {
+	width: 300px;
+	float: none;	
+}
+p {
+	border-bottom: 1px dashed #CCC;
+	padding: 5px;
+	margin: 0;
+}
+
+
+
+
+.pFocus{
+	background: #F8F8F8;
+}
+#orientacao {
+	background: #FFFFCA;
+	padding: 5px;
+	border: 1px solid #FFFF00;
+	margin-bottom: 15px;
+}
+.pFocus span.tool_tip {
+	margin-left: 15px;
+	color: red;
+	font-size: 11px;
+	background: url(../img/seta_tooltip.gif) no-repeat;
+	padding-left: 16px;
+}
+.mask_tool_tip {
+	background: red !important;	
+}
+.mao {
+	cursor: pointer;
+}
+
+
+
+
+
+/* ************************************
+ Folha de estilo p/ validação de form
+**************************************/
+
+.alertFocus {
+	border: 1px solid #E70808;
+	color: #E70808;
+}
+.alertFocusToolTip {
+	/* border: 1px solid red !important; */
+	/* background: url(../img/seta_tool_tip.gif) no-repeat; */
+	background: #FFF url(../img/ico_seta_form.gif) 0 4px no-repeat;
+	
+	/* height: 40px; */
+	width: 280px;
+	color: red;
+	padding-top: 2px;
+	padding-left: 14px;
+	margin-left: 3px;
+	/* -moz-opacity: 0.6;
+	_filter: alpha(opacity=60); /* I.E. */ 
+}
+
+.boxErrorMain {
+	width: 250px;
+	background: url(../img/bg_seta_main.jpg) 20px 20px no-repeat #FFE9E9;
+	/* -moz-opacity: 0.8;
+	_filter: alpha(opacity=80); /* I.E. */ 
+	padding: 25px;
+	padding-left: 80px;
+	color: #E70808;
+	font: 16px bold Arial, sans-serif;
+	line-height: 1.6em;
+	border: double #F5B9B9;
+	z-index: 100;
+}
+
+.buttonCloseToolTip {
+	font-weight: bold !important;
+	color: #AE000D;
+	text-decoration: underline !important;
+	display: block !important;
+	cursor: pointer;
+}
+
+.bgError {
+	background: #FFF;
+	filter: alpha(opacity=60); /* I.E. */
+	-moz-opacity: 0.6; /* firefox  gecko */
+	position: absolute;
+	top: 0;
+	left: 0;
+}

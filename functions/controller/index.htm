@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>Exame de vista</title>
+<script type="text/javascript" src="js/dragnDrop.js"></script>  
+<style>
+		#legenda {
+			position: absolute;	
+			width: 200px;
+			left: 800px;
+			border: 4px solid #CCC;
+			padding: 4px;
+		}
+		.miopia {
+			color: #E02327;
+		}
+		.cego {
+			color: #500305;
+		}
+		.boa {
+			color: #2B58D2;
+		}
+		.excelente { color: #6C9189; }
+		
+		#controller { height: 60px; position: relative; }
+
+	
+	</style>
+	
+	
+</head>
+
+<body>
+<div id="legenda">
+	<h3>Resultado</h3>
+	<ul>
+		<li class="miopia">Míope</li>
+		<li class="cego">Cego, procure um médico</li>	
+		<li class="boa">Boa visão</li>	
+		<li class="excelente">Excelente visão</li>	
+	</ul>
+</div>
+<h1>Exame de Vista v1.0 </h1>
+
+<div id="controller">
+
+</div>
+
+
+<p id="idle" class="boa">
+@IDLE SYSTEMS
+</p>
+
+<p >
+	<span id="porcentagem">0</span>%
+</p>
+
+<script type="text/javascript">
+
+Object.prototype.Top = function(){
+				result = 0;
+				idObj2 = this
+				while(idObj2){
+					result += idObj2.offsetTop	
+					idObj2 = idObj2.offsetParent
+				}
+				return result
+}
+	
+Object.prototype.Left = function(){
+				result = 0;
+				idObj2 = this
+				while(idObj2){
+					result += idObj2.offsetLeft
+					idObj2 = idObj2.offsetParent
+				}
+				return result
+}
+
+	var idle = document.getElementById('idle')
+	var porcentagem = document.getElementById('porcentagem')
+	var controller = document.getElementById('controller')
+	var img = document.createElement('img')
+	var linha = document.createElement('hr')
+	img.src = "img/botao.gif"
+	controller.style.width = "500px" 
+
+	img.style.position = "absolute";
+	img.style.top = "-20px"
+	
+	
+	controller.appendChild(linha)
+	controller.appendChild(img)
+
+	img.onmouseup = function() {
+		alert("entrou depois")
+	}
+
+	// atribuindo movimento 
+	img.onmousedown = function() {
+		var objectController = this
+			document.onmousemove=function(e){			
+									if(document.all){ // se for IE
+												movX = event.clientX 
+												object = event.srcElement
+												calcLeft = objectController.offsetLeft
+												
+									}else{ // se for Mozilla
+												movX = e.clientX 
+												object = e.target						
+												calcLeft = objectController.Left()
+									}
+									// se a distância não for maior q a largura do BOX, altera a largura
+									if( (movX - (objectController.offsetWidth/2) < controller.offsetWidth) ) {
+										var porce = (((((movX - (objectController.offsetWidth/2))))*100)/controller.offsetWidth)
+										objectController.style.left = (movX - (objectController.offsetWidth/2))   + "px"
+										porcentagem.innerHTML = porce  					
+										// brincando com o resultado
+										if(porce < 20){ idle.className = "excelente" }
+										if(porce > 20 && porce < 40){ idle.className = "boa" }
+										if(porce > 40 && porce < 90){ idle.className = "miopia" }
+										if(porce > 90 ){ idle.className = "cego" }
+										idle.style.fontSize = (movX - (objectController.offsetWidth/2)) + "px"
+				
+									}
+									objectController.onmouseup = function(){ 
+												document.onmousemove = function() { 
+													// (flagObject==true) ? flagObject = false : flagObject = true
+													return false
+												 } 
+									} // fim do onmouseup
+							} // fim do document.onmousemove
+		
+	} // fim do onmousedown
+
+	objectController.onmouseup = function(){ 
+					document.onmousemove = function() { 						
+							return false
+					} 
+	} // fim do onmouseup
+
+</script>
+</body>
+</html>

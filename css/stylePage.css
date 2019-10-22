@@ -1,0 +1,113 @@
+/* -----------------------------------------------
+*
+* 	@style  = "Estilizar Todas as páginas da @Idle Lib"
+* 	@author = "Idle Systems - http://www.idle.com.br
+*
+*-------------------------------------------------*/
+body {
+	
+	font: 13px Trebuchet MS, sans-serif;
+	color: #4D4D4D;
+	margin: 0;
+	text-align: center;
+	font: 18px Garamond, serif;
+}
+#tituloGeral {
+	background: url(../img/bg_topo.jpg) no-repeat;
+	margin: 0 auto;
+	width: 763px;
+	height: auto;
+	min-height: 160px;
+	_height: 160px;
+	text-indent: -900px;
+	font-size: 1px;
+	
+}
+#paginaToda {
+	margin: 0 auto;
+	width: 763px;
+	background: url(../img/bg_rodape.jpg) 21px bottom no-repeat;
+	padding: 10px 20px;
+	padding-bottom: 80px;
+	text-align: left;
+}
+
+h2 {
+	font-size: 24px;
+	/* font-weight: normal; */
+	color: #8E2329;
+	margin-bottom: 1px;
+}
+
+
+acronym {
+	cursor: help;
+}
+code {
+	font-size: 13px;
+	display: block;
+	padding: 6px;
+	border: 1px solid #5B5B5B;
+	color: #5B5B5B;
+	background: #F8F8F8;
+}
+
+.listCodigo {
+	margin-left: 30px;
+	width: 700px;
+	display: none;
+}
+.listCodigo span.atributo {
+	display: block;
+	border-bottom: 1px dashed #CCC;
+	margin-bottom: 5px;	
+}
+.listCodigo span.atributo span{
+	width: 150px;
+	color: #8E2329;
+	display: block;
+	float: left;
+}
+
+.linkCodigo {
+	margin-top: 20px;
+	display: block;
+	color: #5B5B5B;
+	background: url(../img/ico_link.jpg) no-repeat;
+	padding-left: 30px;
+	height: 30px;
+}
+.linkCodigo:hover {
+	color: #0064B2;
+	background: url(../img/ico_link_hover.jpg) no-repeat;
+}
+
+/* ---------------- Separador --------------*/
+.separador {
+	background: url(../img/bg_separador.jpg) 70px 0 no-repeat;
+	height: 24px;
+}
+#menuCode {
+	margin-left: 25px;
+	padding-left: 25px;
+}
+#menuCode li {
+	margin-bottom: 10px;	
+}
+#menuCode a {
+	color: #4D4D4D;
+	text-decoration: none;
+}
+#menuCode a:hover {
+	background-color: #4D4D4D;
+	color: #FFF;
+}
+
+p.boxAlert {
+	padding: 10px; 
+	background: #FFF9F9;
+}
+p.boxAlert strong { 
+	color: red;
+	
+}

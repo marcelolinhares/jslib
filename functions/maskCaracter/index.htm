@@ -1,0 +1,59 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="js/maskCaracter.js"></script>
+
+<style type="text/css" media="all">
+ 	.mask_tool_tip{
+		border: 1px solid #C1CC00;
+		background: #FEFFE1;
+		color: #899100;
+		padding: 6px;
+	}
+</style>
+
+<title>teste</title>
+</head>
+
+<body>
+
+<h1>Máscara para entrada de caracteres Inválidos em formulários</h1>
+ 
+
+<p>Validação de caracteres inválidos ( #@!"-+.}+; ) <br />
+	<input type="text" id="caracter" name="valor"  /> 
+</p>
+<hr size="1" noshade="noshade" />
+
+
+<p>Validação de campo númerico ( somente 0123456789 - recomendado para datas, telefones)<br />
+	<input type="text" id="dia" name="valor" size="2"  /> - <input type="text" id="mes" name="valor" size="2"  /> </body> - <input type="text" id="ano" name="valor" size="2"  /> 
+</p>
+
+<p>Validação de campo númerico para moeda ( somente 0123456789 + vírgula - recomendado para moedas )<br />
+	<input type="text" id="dolar" name="valor"  /> 
+</p>
+<hr size="1" noshade="noshade" />
+
+<p>Validação de e-mail (Ainda incompleta) (validação para entrada de e-mail, algoritmo precisa de mais validações ;-)<br />
+	<input type="text" id="email" name="valor"  /> </body>
+</p>
+ <p>
+	Validação de campo númerico para Dinheiro - Entrada de número, ponto e vírgula<br />
+	<input type="text" id="dinheiro" name="valor"  /> 
+</p>
+
+<script type="text/javascript">
+	 var test = new maskCaracter("mask_tool_tip")
+	 test.validCaracter("caracter") 
+	 test.validNumber("dia","mes","ano") 
+	 test.validCurrency("dolar")
+	 test.validMail("email") 
+	 test.validMoney("dinheiro")
+	 
+	 
+</script>
+
+</html>

@@ -1,0 +1,70 @@
+/* ------------------------------------
+*
+* 	@style  = "Estilizar Todas as páginas do sistema de PABX14"
+* 	@author = "Idle Systems - http://www.idle.com.br
+*
+*-----------------------------------*/
+body {
+	font: 13px Trebuchet MS, sans-serif;
+	color: #4D4D4D;
+	margin: 0;text-align: left;
+	margin: 50px;
+}
+#formCadastro {
+	background: url(../img/topo_form.jpg) no-repeat;
+	height: 114px;
+	padding-top: 114px;
+	padding-bottom: 15px;
+	/* border-bottom: 4px solid #F7F3A9; */
+	
+}
+body a {
+	color: #4D4D4D;
+}
+
+input, select {
+	border: 1px solid #787878;
+	border-top: 1px solid #D3D3D3;
+	border-left: 1px solid #D3D3D3;
+	padding: 2px;
+	font: 11px Trebuchet MS, sans-serif;
+	background: url(../img/background_input.gif) repeat-x;
+}
+label {
+	font-weight: bold;
+	width: 70px;
+	display: block; 
+	float: left;
+}
+p {
+	border-bottom: 1px dashed #CCC;
+	padding: 5px;
+	margin: 0;
+}
+.focado {
+	border: 1px solid red !important;
+	background: #FFF;
+}
+.pFocus{
+	background: #F8F8F8;
+}
+#orientacao {
+	background: #FFFFCA;
+	padding: 5px;
+	border: 1px solid #FFFF00;
+	margin-bottom: 15px;
+}
+.pFocus span.tool_tip {
+	margin-left: 15px;
+	color: red;
+	font-size: 11px;
+	background: url(../img/ico_seta_form.gif) no-repeat;
+	padding-left: 16px;
+}
+.mask_tool_tip {
+	background: red !important;	
+}
+.mao {
+	cursor: pointer;
+}
+

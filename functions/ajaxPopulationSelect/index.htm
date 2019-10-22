@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Fun��o para popular combo Via Ajax</title>
+<script type="text/javascript" src="js/ajaxPopulate.js"></script>
+</head>
+
+<body>
+<h1>Populando ComboBox via Ajax</h1>
+			<fieldset>
+					<legend>Estado / Cidade</legend>	
+			<p>
+					<label for="estado">Estado</label>
+					<select name="estado" id="estado" title="Escolha o estado">
+						<option value="-1" selected="selected">Escolha</option>
+						<option value="1">Minas Gerais</option>
+						<option value="2">Espirito Santo</option>
+					</select>
+				</p>
+
+				<p>	
+				   <label for="cidade">Cidade</label>
+					<select name="cidade" id="cidade" title="Escolha a cidade">
+						<option value="-1" selected="selected">Escolha</option>
+					</select>
+				</p>
+		</fieldset>
+
+	<fieldset>
+					<legend>Categoria / Filmes</legend>	
+			<p>
+					<label for="categoria">Categoria</label>
+					<select name="categoria" id="categoria" title="Escolha o estado">
+						<option value="-1" selected="selected">Escolha</option>
+						<option value="1">Drama</option>
+						<option value="2">Romance</option>
+					</select>
+				</p>
+						
+				
+				<p>	
+				   <label for="filmes">Filmes</label>
+					<select name="filmes" id="filmes" title="Escolha a cidade">
+						<option value="-1" selected="selected">Escolha</option>
+					</select>
+				</p>
+		</fieldset>
+
+<script>
+	populateSelect('estado','cidade','cidadesVW.php','estado')
+	populateSelect('categoria','filmes','categoriasVW.php','categoria')
+</script>
+</body>
+</html>

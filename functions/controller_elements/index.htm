@@ -1,0 +1,1908 @@
+<html>
+<head>
+<title>Resultado da Busca</title>
+<script type="text/javascript" src="js/dragnDrop.js"></script>  
+<style>
+		#tabelaPrincipalResultado {
+			border: 1px solid red;
+			padding: 10px;
+			font: 11px verdana,sans-serif;
+		}
+		#tabelaPrincipalResultado tr td {
+				padding: 4px; 
+				border-bottom: 1px solid red;
+		}
+		#tabelaPrincipalResultado tr.linhaEscuraTabela td{
+				background: #FFFBFB;
+		}
+		#legenda {
+			position: absolute;	
+			width: 200px;
+			left: 800px;
+			border: 4px solid #CCC;
+			padding: 4px;
+		}
+		.miopia {
+			color: #E02327;
+		}
+		.cego {
+			color: #500305;
+		}
+		.boa {
+			color: #2B58D2;
+		}
+		.excelente { color: #6C9189; }
+		
+		#controller { height: 60px; position: relative; }
+
+	
+	</style>
+	
+	
+</head>
+
+<body>
+
+<h1>Resultado da Busca </h1>
+
+<div id="controller">
+
+</div>
+Mostrando <span id="porcentagem">50</span> resultados
+
+
+<div id="idle" class="boa">
+ 	 
+	<table border="0" id="tabelaPrincipalResultado">
+
+	<tr class="subtituloTabela">
+		<th>Número</td>
+
+		<th>Destinatário</td>
+		<th>Email destinatário</td>
+		<th>Remetente</td>
+		<th>Email Remetente</td>
+		<th>Data do envio</td>
+	</tr>
+
+	
+	
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>1</td>
+			      <td>leo</td>
+			      <td>rodrigo.cioletti@idle.com.br</td>
+			      <td>rodrigo</td>
+			      <td>ciolettivale</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>2</td>
+			<td>Roberto</td>
+			<td>rodrigo.cioletti@idle.com.br</td>
+			<td>Daniel</td>
+
+			<td>ciolettivale@ig.com.br</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>3</td>
+			      <td>massdaasd</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>dssda</td>
+			      <td>dssda</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>4</td>
+			<td>cioletti</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>asdsaad</td>
+			<td>dasdsaasd</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>5</td>
+
+			      <td>asdsaa</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>maralksadj</td>
+			      <td>dssdadsa</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>6</td>
+			<td>a</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>dssad</td>
+			<td>aasa</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>7</td>
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>8</td>
+			<td>a</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>a</td>
+
+			<td>a</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>9</td>
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>saa</td>
+			      <td>aa</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>10</td>
+			<td>aaa</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>aaa</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>11</td>
+
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>aa</td>
+			      <td>aa</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>12</td>
+			<td>aa</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>aaa</td>
+			<td>eeeee</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>13</td>
+			      <td>aa</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>oooo</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>14</td>
+			<td>marcelo</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>josÃ©</td>
+
+			<td>jao@idle.com.br</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>15</td>
+			      <td>marcelo</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>josÃ©</td>
+			      <td>jao@idle.com.br</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>16</td>
+			<td>marcelo</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>josÃ©</td>
+			<td>jao@idle.com.br</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>17</td>
+
+			      <td>marcelo</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>josÃ©</td>
+			      <td>jao@idle.com.br</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>18</td>
+			<td>aa</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>aa</td>
+			<td>a</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>19</td>
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>20</td>
+			<td>marcelo</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>a</td>
+
+			<td>a</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>21</td>
+			      <td>sss</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>ss</td>
+			      <td>sss</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>22</td>
+			<td>eustáquio</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>josé</td>
+			<td>marcelo@jose</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>23</td>
+
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>24</td>
+			<td>ss</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>ss</td>
+			<td>ss</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>25</td>
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>26</td>
+			<td>ddfd</td>
+			<td>cataldo@idle.com.br</td>
+			<td>ddd</td>
+
+			<td>dfdf</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>27</td>
+			      <td>dd</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>ddd</td>
+			      <td>dd</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>28</td>
+			<td>Marcelo Linhares</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>João</td>
+			<td>marcelolinhares@ig.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>29</td>
+
+			      <td>assaa</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>antnio</td>
+			      <td>antonio@antonino.com.br</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>30</td>
+			<td>Rodrigo Cioletti</td>
+			<td>rodrigo.cioletti@idle.com.br</td>
+			<td>marcelo linhares</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>31</td>
+			      <td>Nadia</td>
+			      <td>nadiaim@gmail.com</td>
+			      <td>Arthur</td>
+			      <td>monteiro.arthur@gmail.com</td>
+
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>32</td>
+			<td>Danilo amigão</td>
+			<td>danilo.silva@idle.com.br</td>
+			<td>Rodrigo Cioletti</td>
+
+			<td>rodrigo.cioletti@idle.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>33</td>
+			      <td>fabiano</td>
+			      <td>fabianoch@brasiltelecom.com.br</td>
+
+			      <td>fabiano</td>
+			      <td>fabianoch@brturbo.com.br</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>34</td>
+			<td>eu</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>Marcelo</td>
+			<td>marcelo.linasss</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>35</td>
+
+			      <td>Rodrigo</td>
+			      <td>rodrigo.cioletti@idle.com.br</td>
+			      <td>DAnilo</td>
+			      <td>kjsadhfks</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>36</td>
+			<td>ewr</td>
+			<td>danilo.silva@idle.com.br</td>
+			<td>\zx</td>
+			<td>sade</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>37</td>
+			      <td>ELEA</td>
+			      <td>ELEAZAMBUJA@HOTMAIL.COM</td>
+			      <td>BIANO</td>
+			      <td>FABIANOFACCINE@HOTMAIL.COM</td>
+
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>38</td>
+			<td>Edgar</td>
+			<td>edgar@wenda.com.br</td>
+			<td>Djair</td>
+
+			<td>djair.xavier@terra.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>39</td>
+			      <td>Ariande</td>
+			      <td>ariadne@pinheironeto.com.br</td>
+
+			      <td>Djair</td>
+			      <td>djair.xavier@terra.com.br</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>40</td>
+			<td>Anderson</td>
+
+			<td>a_zilio@ibest.com.br</td>
+			<td>Mauricio</td>
+			<td>fale.mauricio@terra.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  	 		
+		    <tr class="linhaClaraTabela">
+
+			<td>6</td>
+			<td>a</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>dssad</td>
+			<td>aasa</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>7</td>
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>8</td>
+			<td>a</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>a</td>
+
+			<td>a</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>9</td>
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>saa</td>
+			      <td>aa</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>10</td>
+			<td>aaa</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>aaa</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>11</td>
+
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>aa</td>
+			      <td>aa</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>12</td>
+			<td>aa</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>aaa</td>
+			<td>eeeee</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>13</td>
+			      <td>aa</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>oooo</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>14</td>
+			<td>marcelo</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>josÃ©</td>
+
+			<td>jao@idle.com.br</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>15</td>
+			      <td>marcelo</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>josÃ©</td>
+			      <td>jao@idle.com.br</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>16</td>
+			<td>marcelo</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>josÃ©</td>
+			<td>jao@idle.com.br</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>17</td>
+
+			      <td>marcelo</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>josÃ©</td>
+			      <td>jao@idle.com.br</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>18</td>
+			<td>aa</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>aa</td>
+			<td>a</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>19</td>
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>20</td>
+			<td>marcelo</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>a</td>
+
+			<td>a</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>21</td>
+			      <td>sss</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>ss</td>
+			      <td>sss</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>22</td>
+			<td>eustáquio</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>josé</td>
+			<td>marcelo@jose</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>23</td>
+
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>24</td>
+			<td>ss</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>ss</td>
+			<td>ss</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>25</td>
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>26</td>
+			<td>ddfd</td>
+			<td>cataldo@idle.com.br</td>
+			<td>ddd</td>
+
+			<td>dfdf</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>27</td>
+			      <td>dd</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>ddd</td>
+			      <td>dd</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>28</td>
+			<td>Marcelo Linhares</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>João</td>
+			<td>marcelolinhares@ig.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>29</td>
+
+			      <td>assaa</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>antnio</td>
+			      <td>antonio@antonino.com.br</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>30</td>
+			<td>Rodrigo Cioletti</td>
+			<td>rodrigo.cioletti@idle.com.br</td>
+			<td>marcelo linhares</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>31</td>
+			      <td>Nadia</td>
+			      <td>nadiaim@gmail.com</td>
+			      <td>Arthur</td>
+			      <td>monteiro.arthur@gmail.com</td>
+
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>32</td>
+			<td>Danilo amigão</td>
+			<td>danilo.silva@idle.com.br</td>
+			<td>Rodrigo Cioletti</td>
+
+			<td>rodrigo.cioletti@idle.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>33</td>
+			      <td>fabiano</td>
+			      <td>fabianoch@brasiltelecom.com.br</td>
+
+			      <td>fabiano</td>
+			      <td>fabianoch@brturbo.com.br</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>34</td>
+			<td>eu</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>Marcelo</td>
+			<td>marcelo.linasss</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>35</td>
+
+			      <td>Rodrigo</td>
+			      <td>rodrigo.cioletti@idle.com.br</td>
+			      <td>DAnilo</td>
+			      <td>kjsadhfks</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>36</td>
+			<td>ewr</td>
+			<td>danilo.silva@idle.com.br</td>
+			<td>\zx</td>
+			<td>sade</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>37</td>
+			      <td>ELEA</td>
+			      <td>ELEAZAMBUJA@HOTMAIL.COM</td>
+			      <td>BIANO</td>
+			      <td>FABIANOFACCINE@HOTMAIL.COM</td>
+
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>38</td>
+			<td>Edgar</td>
+			<td>edgar@wenda.com.br</td>
+			<td>Djair</td>
+
+			<td>djair.xavier@terra.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>39</td>
+			      <td>Ariande</td>
+			      <td>ariadne@pinheironeto.com.br</td>
+
+			      <td>Djair</td>
+			      <td>djair.xavier@terra.com.br</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>40</td>
+			<td>Anderson</td>
+
+			<td>a_zilio@ibest.com.br</td>
+			<td>Mauricio</td>
+			<td>fale.mauricio@terra.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+	 	  <tr class="linhaEscuraTabela">
+				  <td>19</td>
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>20</td>
+			<td>marcelo</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>a</td>
+
+			<td>a</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>21</td>
+			      <td>sss</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>ss</td>
+			      <td>sss</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>22</td>
+			<td>eustáquio</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>josé</td>
+			<td>marcelo@jose</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>23</td>
+
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>24</td>
+			<td>ss</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>ss</td>
+			<td>ss</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>25</td>
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>26</td>
+			<td>ddfd</td>
+			<td>cataldo@idle.com.br</td>
+			<td>ddd</td>
+
+			<td>dfdf</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>27</td>
+			      <td>dd</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>ddd</td>
+			      <td>dd</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>28</td>
+			<td>Marcelo Linhares</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>João</td>
+			<td>marcelolinhares@ig.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>29</td>
+
+			      <td>assaa</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>antnio</td>
+			      <td>antonio@antonino.com.br</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>30</td>
+			<td>Rodrigo Cioletti</td>
+			<td>rodrigo.cioletti@idle.com.br</td>
+			<td>marcelo linhares</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>31</td>
+			      <td>Nadia</td>
+			      <td>nadiaim@gmail.com</td>
+			      <td>Arthur</td>
+			      <td>monteiro.arthur@gmail.com</td>
+
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>32</td>
+			<td>Danilo amigão</td>
+			<td>danilo.silva@idle.com.br</td>
+			<td>Rodrigo Cioletti</td>
+
+			<td>rodrigo.cioletti@idle.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>33</td>
+			      <td>fabiano</td>
+			      <td>fabianoch@brasiltelecom.com.br</td>
+
+			      <td>fabiano</td>
+			      <td>fabianoch@brturbo.com.br</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>34</td>
+			<td>eu</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>Marcelo</td>
+			<td>marcelo.linasss</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>35</td>
+
+			      <td>Rodrigo</td>
+			      <td>rodrigo.cioletti@idle.com.br</td>
+			      <td>DAnilo</td>
+			      <td>kjsadhfks</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>36</td>
+			<td>ewr</td>
+			<td>danilo.silva@idle.com.br</td>
+			<td>\zx</td>
+			<td>sade</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>37</td>
+			      <td>ELEA</td>
+			      <td>ELEAZAMBUJA@HOTMAIL.COM</td>
+			      <td>BIANO</td>
+			      <td>FABIANOFACCINE@HOTMAIL.COM</td>
+
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>38</td>
+			<td>Edgar</td>
+			<td>edgar@wenda.com.br</td>
+			<td>Djair</td>
+
+			<td>djair.xavier@terra.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>39</td>
+			      <td>Ariande</td>
+			      <td>ariadne@pinheironeto.com.br</td>
+
+			      <td>Djair</td>
+			      <td>djair.xavier@terra.com.br</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>40</td>
+			<td>Anderson</td>
+
+			<td>a_zilio@ibest.com.br</td>
+			<td>Mauricio</td>
+			<td>fale.mauricio@terra.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  	 		
+		    <tr class="linhaClaraTabela">
+
+			<td>6</td>
+			<td>a</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>dssad</td>
+			<td>aasa</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>7</td>
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>8</td>
+			<td>a</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>a</td>
+
+			<td>a</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>9</td>
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>saa</td>
+			      <td>aa</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>10</td>
+			<td>aaa</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>aaa</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>11</td>
+
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>aa</td>
+			      <td>aa</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>12</td>
+			<td>aa</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>aaa</td>
+			<td>eeeee</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>13</td>
+			      <td>aa</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>oooo</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>14</td>
+			<td>marcelo</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>josÃ©</td>
+
+			<td>jao@idle.com.br</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>15</td>
+			      <td>marcelo</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>josÃ©</td>
+			      <td>jao@idle.com.br</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>16</td>
+			<td>marcelo</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>josÃ©</td>
+			<td>jao@idle.com.br</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>17</td>
+
+			      <td>marcelo</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>josÃ©</td>
+			      <td>jao@idle.com.br</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>18</td>
+			<td>aa</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>aa</td>
+			<td>a</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>19</td>
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>20</td>
+			<td>marcelo</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>a</td>
+
+			<td>a</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>21</td>
+			      <td>sss</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>ss</td>
+			      <td>sss</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>22</td>
+			<td>eustáquio</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>josé</td>
+			<td>marcelo@jose</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>23</td>
+
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>24</td>
+			<td>ss</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>ss</td>
+			<td>ss</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>25</td>
+			      <td>a</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>a</td>
+			      <td>a</td>
+
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>26</td>
+			<td>ddfd</td>
+			<td>cataldo@idle.com.br</td>
+			<td>ddd</td>
+
+			<td>dfdf</td>
+			<td>27/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>27</td>
+			      <td>dd</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+
+			      <td>ddd</td>
+			      <td>dd</td>
+			      <td>27/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>28</td>
+			<td>Marcelo Linhares</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>João</td>
+			<td>marcelolinhares@ig.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>29</td>
+
+			      <td>assaa</td>
+			      <td>marcelo.linhares@idle.com.br</td>
+			      <td>antnio</td>
+			      <td>antonio@antonino.com.br</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>30</td>
+			<td>Rodrigo Cioletti</td>
+			<td>rodrigo.cioletti@idle.com.br</td>
+			<td>marcelo linhares</td>
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>31</td>
+			      <td>Nadia</td>
+			      <td>nadiaim@gmail.com</td>
+			      <td>Arthur</td>
+			      <td>monteiro.arthur@gmail.com</td>
+
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>32</td>
+			<td>Danilo amigão</td>
+			<td>danilo.silva@idle.com.br</td>
+			<td>Rodrigo Cioletti</td>
+
+			<td>rodrigo.cioletti@idle.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>33</td>
+			      <td>fabiano</td>
+			      <td>fabianoch@brasiltelecom.com.br</td>
+
+			      <td>fabiano</td>
+			      <td>fabianoch@brturbo.com.br</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>34</td>
+			<td>eu</td>
+
+			<td>marcelo.linhares@idle.com.br</td>
+			<td>Marcelo</td>
+			<td>marcelo.linasss</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>35</td>
+
+			      <td>Rodrigo</td>
+			      <td>rodrigo.cioletti@idle.com.br</td>
+			      <td>DAnilo</td>
+			      <td>kjsadhfks</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+
+			<td>36</td>
+			<td>ewr</td>
+			<td>danilo.silva@idle.com.br</td>
+			<td>\zx</td>
+			<td>sade</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>37</td>
+			      <td>ELEA</td>
+			      <td>ELEAZAMBUJA@HOTMAIL.COM</td>
+			      <td>BIANO</td>
+			      <td>FABIANOFACCINE@HOTMAIL.COM</td>
+
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>38</td>
+			<td>Edgar</td>
+			<td>edgar@wenda.com.br</td>
+			<td>Djair</td>
+
+			<td>djair.xavier@terra.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 
+  
+			
+				  <tr class="linhaEscuraTabela">
+				  <td>39</td>
+			      <td>Ariande</td>
+			      <td>ariadne@pinheironeto.com.br</td>
+
+			      <td>Djair</td>
+			      <td>djair.xavier@terra.com.br</td>
+			      <td>28/07/2005</td> 
+			     
+		</tr>
+	 
+  
+			
+		    <tr class="linhaClaraTabela">
+			<td>40</td>
+			<td>Anderson</td>
+
+			<td>a_zilio@ibest.com.br</td>
+			<td>Mauricio</td>
+			<td>fale.mauricio@terra.com.br</td>
+			<td>28/07/2005</td> 
+			    
+		</tr>
+	 </table>
+
+</div>
+
+
+
+<script type="text/javascript">
+
+function showElementsAll(idTable){
+	var rows = document.getElementById(idTable).rows
+	for(i=(rows.length-1); i > 1; i--){
+			rows[i].style.display = ""
+	}	
+}
+
+function showElements(idTable,numberElements){
+	showElementsAll(idTable)
+	var rows = document.getElementById(idTable).rows
+	for(i=(rows.length-1); i >numberElements; i--){
+			//alert(rows[i].innerHTML)
+			rows[i].style.display = "none"
+			
+	}	
+
+}
+
+showElements("tabelaPrincipalResultado",130)
+Object.prototype.Top = function(){
+				result = 0;
+				idObj2 = this
+				while(idObj2){
+					result += idObj2.offsetTop	
+					idObj2 = idObj2.offsetParent
+				}
+				return result
+}
+	
+Object.prototype.Left = function(){
+				result = 0;
+				idObj2 = this
+				while(idObj2){
+					result += idObj2.offsetLeft
+					idObj2 = idObj2.offsetParent
+				}
+				return result
+}
+
+	var idle = document.getElementById('idle')
+	var porcentagem = document.getElementById('porcentagem')
+	var controller = document.getElementById('controller')
+	var img = document.createElement('img')
+	var linha = document.createElement('hr')
+	img.src = "img/botao.gif"
+	controller.style.width = "500px" 
+
+	img.style.position = "absolute";
+	img.style.top = "-20px"
+	
+	
+	controller.appendChild(linha)
+	controller.appendChild(img)
+
+	img.onmouseup = function() {
+		alert("entrou depois")
+	}
+
+	// atribuindo movimento 
+	img.onmousedown = function() {
+		var objectController = this
+			document.onmousemove=function(e){			
+									if(document.all){ // se for IE
+												movX = event.clientX 
+												object = event.srcElement
+												calcLeft = objectController.offsetLeft
+												
+									}else{ // se for Mozilla
+												movX = e.clientX 
+												object = e.target						
+												calcLeft = objectController.Left()
+									}
+									// se a distância não for maior q a largura do BOX, altera a largura
+									if( (movX - (objectController.offsetWidth/2) < controller.offsetWidth) ) {
+										var porce = (((((movX - (objectController.offsetWidth/2))))*100)/controller.offsetWidth)
+										objectController.style.left = (movX - (objectController.offsetWidth/2))   + "px"
+										porcentagem.innerHTML = parseInt(porce)  					
+										showElements("tabelaPrincipalResultado",parseInt(porce))
+										idle.style.fontSize = (movX - (objectController.offsetWidth/2)) + "px"
+				
+									}
+									objectController.onmouseup = function(){ 
+												document.onmousemove = function() { 
+													// (flagObject==true) ? flagObject = false : flagObject = true
+													return false
+												 } 
+									} // fim do onmouseup
+							} // fim do document.onmousemove
+		
+	} // fim do onmousedown
+
+	objectController.onmouseup = function(){ 
+					document.onmousemove = function() { 						
+							return false
+					} 
+	} // fim do onmouseup
+
+</script>
+</body>
+</html>

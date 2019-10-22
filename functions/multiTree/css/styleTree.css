@@ -1,0 +1,69 @@
+/* ------------------- conteúdo árvore com legenda ----------------- */
+#conteudo_arvore {
+	position: relative;
+	height: 400px;
+		
+}
+#conteudo_arvore #legenda {
+	position: absolute;
+	border: 2px solid red;
+	height: 200px;
+	width: 130px;
+	left: 100%;
+	margin-left: -160px;
+}
+
+/* -------------- Árvore Multinível --------------------- */
+#arvore_multinivel {
+	border: none;
+	font: 13px verdana,sans-serif;
+	display: block;
+	float: none;
+	margin-top: 25px !important;
+	width: 85% !important;
+	height: auto !important;
+}
+#arvore_multinivel li ul {
+	clear: both;
+	float: none;
+	height: auto !important;
+	background: url(../images/faq_arvore_nodo_lista.gif) 3px repeat-y !important;
+}
+span.fechado {
+	background: url(../images/faq_arvore_nodo_fechado.gif) 3px no-repeat;
+	padding-left: 18px !important;	
+	cursor: pointer;
+	text-decoration: underline;	
+}
+span.aberto {
+	background: url(../images/faq_arvore_nodo_aberto.gif) 3px no-repeat;
+	padding-left: 18px !important;
+	cursor: pointer;
+	text-decoration: underline;
+}
+span.paisemfilho{
+	padding-left: 18px !important;
+	background: url(../images/faq_arvore_nodo_filhosemfilho.gif) 3px no-repeat;
+}
+span.filhosemfilho{
+	padding-left: 18px !important;
+	background: url(../images/faq_arvore_nodo_filhosemfilho.gif) 3px no-repeat;
+}
+
+#arvore_multinivel li {
+	display: block !important;
+	float: none;
+	padding: 5px;
+}
+#arvore_multinivel ul{
+	margin-bottom: 5px;	
+}
+#arvore_multinivel ul li ul {
+	margin-bottom: 0 !important;
+}
+#arvore_multinivel ul li{
+	display: block !important;
+	padding-left: 35px;
+	float: none;
+	width: 100%;
+}
